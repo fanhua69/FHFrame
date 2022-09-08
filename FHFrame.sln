@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FHFrame", "FHFrame.vcproj", "{222C2E2A-E531-4796-A218-F0F4A0E88C0A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{222C2E2A-E531-4796-A218-F0F4A0E88C0A}.Debug.ActiveCfg = Debug|Win32
+		{222C2E2A-E531-4796-A218-F0F4A0E88C0A}.Debug.Build.0 = Debug|Win32
+		{222C2E2A-E531-4796-A218-F0F4A0E88C0A}.Release.ActiveCfg = Release|Win32
+		{222C2E2A-E531-4796-A218-F0F4A0E88C0A}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

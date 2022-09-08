@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{222C2E2A-E531-4796-A218-F0F4A0E88C0A}</ProjectGuid>
+    <SccProjectName>"$/qc.root", BAAAAAAA</SccProjectName>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>..</SccLocalPath>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>D:\Projects\cj60\Include;D:\Projects\FHFrame\include;C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\atlmfc\src\mfc;D:\Projects\fhmath\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;_COMPILING_FHFRAME;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4305;  4005; 4244</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>..\libs\cj60libd.lib;..\libs\fhmathd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../libs/FHFrameD.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\FHFrame.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../libs/FHFrameD.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>./lib/FHFrame.dll</OutputFile>
+      <ModuleDefinitionFile>.\FHFrame.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>./lib/FHFrame.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Childfrm.cpp" />
+    <ClCompile Include="source\DBSolution.cpp" />
+    <ClCompile Include="source\dlgcurvesmoothpar.cpp" />
+    <ClCompile Include="source\FHApp.cpp" />
+    <ClCompile Include="source\FHBaseDoc.cpp" />
+    <ClCompile Include="source\FHCGlobal.cpp" />
+    <ClCompile Include="source\FHDocManager.cpp" />
+    <ClCompile Include="source\FHFrame.cpp" />
+    <ClCompile Include="source\Fhglobal.cpp" />
+    <ClCompile Include="source\FHImage.cpp" />
+    <ClCompile Include="source\FHMainFrm.cpp" />
+    <ClCompile Include="source\Fhstring.cpp" />
+    <ClCompile Include="source\FHToolBar.cpp" />
+    <ClCompile Include="source\FHTreeViewBase.cpp" />
+    <ClCompile Include="source\FilePathDlg.cpp" />
+    <ClCompile Include="source\HistoryManager.cpp" />
+    <ClCompile Include="source\MD5.cpp" />
+    <ClCompile Include="source\MdiClient.cpp" />
+    <ClCompile Include="source\MTabWnd.cpp" />
+    <ClCompile Include="source\MyDate.cpp" />
+    <ClCompile Include="source\MyTime.cpp" />
+    <ClCompile Include="source\OutputBar.cpp" />
+    <ClCompile Include="source\ParManager.cpp" />
+    <ClCompile Include="source\PathDialog.cpp" />
+    <ClCompile Include="source\Progdlg.cpp" />
+    <ClCompile Include="source\SoftDog.cpp" />
+    <ClCompile Include="source\Splash.cpp" />
+    <ClCompile Include="source\StartMenu.cpp" />
+    <ClCompile Include="source\stdafx.cpp" />
+    <ClCompile Include="source\StringExtractor.cpp" />
+    <ClCompile Include="source\TabBar.cpp" />
+    <ClCompile Include="source\TabCtrlEx.cpp" />
+    <ClCompile Include="source\TreeManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Childfrm.h" />
+    <ClInclude Include="include\DBSolution.h" />
+    <ClInclude Include="include\DlgCurveSmoothPar.h" />
+    <ClInclude Include="include\FHApp.h" />
+    <ClInclude Include="include\FHBaseDoc.h" />
+    <ClInclude Include="include\FHCGlobal.h" />
+    <ClInclude Include="include\FHDocManager.h" />
+    <ClInclude Include="include\FHFrame.h" />
+    <ClInclude Include="include\FHImage.h" />
+    <ClInclude Include="include\FHMainFrm.h" />
+    <ClInclude Include="include\Fhstring.h" />
+    <ClInclude Include="include\FHToolBar.h" />
+    <ClInclude Include="include\FHTreeViewBase.h" />
+    <ClInclude Include="include\FilePathDlg.h" />
+    <ClInclude Include="include\HistoryManager.h" />
+    <ClInclude Include="include\MD5.h" />
+    <ClInclude Include="include\MdiClient.h" />
+    <ClInclude Include="include\MTabWnd.h" />
+    <ClInclude Include="include\MyDate.h" />
+    <ClInclude Include="include\MyTime.h" />
+    <ClInclude Include="include\OutputBar.h" />
+    <ClInclude Include="include\ParManager.h" />
+    <ClInclude Include="include\PathDialog.h" />
+    <ClInclude Include="include\Progdlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="include\SoftDog.h" />
+    <ClInclude Include="include\Splash.h" />
+    <ClInclude Include="include\StartMenu.h" />
+    <ClInclude Include="source\stdafx.h" />
+    <ClInclude Include="include\StringExtractor.h" />
+    <ClInclude Include="include\Tabbar.h" />
+    <ClInclude Include="include\TabCtrlEx.h" />
+    <ClInclude Include="include\TreeManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\bmp00003.bmp" />
+    <None Include="res\FHFrame.rc2" />
+    <None Include="res\idr_main.ico" />
+    <None Include="res\JLGS.bmp" />
+    <None Include="powersectionview.bmp" />
+    <None Include="res\toolbar1.bmp" />
+    <None Include="res\workspac.bmp" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FHFrame.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="include\Ry4S.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\fhmath\fhmath.vcxproj">
+      <Project>{5ce7e444-6a79-420f-bc48-6293c013e8ae}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="FHFrame.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

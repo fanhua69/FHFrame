@@ -1,0 +1,327 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\FHFrame.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "FHFrame.dll"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "FHFrame.dll"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_JLGS_BK             BITMAP                  "res\\JLGS.bmp"
+IDR_toolbarPowerSectionView BITMAP                  "powersectionview.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_ICON_JLGS           ICON                    "res\\idr_main.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_toolbarPowerSectionView TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_BUTTONEmpty
+    BUTTON      ID_BUTTONEmpty
+    BUTTON      ID_BUTTONEmpty
+    BUTTON      ID_BUTTONEmpty
+    BUTTON      ID_BUTTONEmpty
+    BUTTON      ID_BUTTONEmpty
+    BUTTON      ID_BUTTONEmpty
+    BUTTON      ID_BUTTONEmpty
+    BUTTON      ID_BUTTONEmpty
+    BUTTON      ID_BUTTONEmpty
+    BUTTON      ID_BUTTONEmpty
+    BUTTON      ID_BUTTONEmpty
+    BUTTON      ID_BUTTONEmpty
+    BUTTON      ID_BUTTONEmpty
+    BUTTON      ID_BUTTONEmpty
+    BUTTON      ID_BUTTONEmpty
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+CG_IDD_PROGRESS DIALOGEX 0, 0, 226, 97
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "运行中..."
+FONT 10, "宋体", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "取消",IDCANCEL,88,57,50,17
+    CONTROL         "Progress1",CG_IDC_PROGDLG_PROGRESS,"msctls_progress32",
+                    0x1,25,34,181,13,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    LTEXT           " 0 %",CG_IDC_PROGDLG_PERCENT,106,23,18,8
+    CTEXT           "状态",CG_IDC_PROGDLG_STATUS,14,13,195,8
+END
+
+IDD_DlgCurveSmoothPar DIALOGEX 0, 0, 184, 175
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "层位处理参数"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "光滑函数的阶数:",IDC_STATIC,26,39,75,13,0,WS_EX_RIGHT
+    LTEXT           "光滑点数:",IDC_STATIC,36,23,65,13,0,WS_EX_RIGHT
+    EDITTEXT        IDC_PointNumber,105,20,49,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Power,105,37,49,14,ES_AUTOHSCROLL
+    LTEXT           "光滑循环的次数:",IDC_STATIC,26,55,75,13,0,WS_EX_RIGHT
+    EDITTEXT        IDC_SmoothLoop,105,53,49,14,ES_AUTOHSCROLL
+    GROUPBOX        "层位光滑参数",IDC_STATIC,6,7,171,74
+    CTEXT           "检查段点数:",IDC_STATIC,6,105,95,13,0,WS_EX_RIGHT
+    EDITTEXT        IDC_CheckPointNumber,105,103,49,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RedundantPointMigrationRate,105,120,49,14,
+                    ES_AUTOHSCROLL
+    GROUPBOX        "层位冗余点删除参数",IDC_STATIC,6,87,171,82
+    RTEXT           "冗余点偏离率:",IDC_STATIC,39,122,64,13
+    LTEXT           "冗余点纵向偏离距离与横向点距的比值。",IDC_STATIC,58,139,
+                    102,23
+    RTEXT           "注:",IDC_STATIC,13,139,35,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    CG_IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 219
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_DlgCurveSmoothPar, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_OUTPUTBAR       "显示/关闭信息输出窗口"
+    ID_VIEW_WORKSPACE       "显示/关闭操作间"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_OutputList          "信息输出列表"
+    IDS_FileFormatError     "文件格式错误"
+    IDS_FileCanNotRemove    "无法删除文件"
+    IDS_TemplateNotFound    "模板没有找到"
+    IDS_DocNotCreated       "文档没有生成"
+    IDS_UnbaleCreateFile    "无法创建文件"
+    IDS_ShortCutErrorWhenCreate "创建菜单组和菜单项快捷方式失败"
+    IDS_ShortCutUnbaleToFind "找不到快捷方式文件,可能已经被删除"
+    IDS_ShortCutDeletedFromStartMenu "从开始菜单上删除快捷方式完成"
+    IDS_ShortCutDeleteFailedFromStartMenu "从开始菜单上删除快捷方式失败"
+    IDS_ShortCut_RegisterTableFailedToOpen "打开注册表失败"
+    IDS_ShortCutDeleteFailedOnTable "向桌面上删除加快捷方式失败"
+    IDS_ShortCutDeletedFromTable "从桌面上删除快捷方式完成"
+    IDS_ShortCutCreationFailedOnTable "向桌面上添加快捷方式失败"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_Survey              "测量"
+    IDS_Weather             "小折射"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_FHMAINFRAME         BITMAP                  "res\\bmp00003.bmp"
+IDB_WorkSpace_TAB       BITMAP                  "res\\workspac.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_FHMAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_SetMainPar
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_WORKSPACEBAR
+    BUTTON      ID_OutputBar
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_SetMainPar           "填写主程序参数\n填写主程序参数"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\FHFrame.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
